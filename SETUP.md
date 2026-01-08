@@ -750,7 +750,7 @@ sudo systemctl restart prometheus
 
 ---
 
-## ✅ Verification
+## Verification
 
 ### Verify All Services - VM #1
 ```bash
