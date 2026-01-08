@@ -95,10 +95,9 @@ All tools demonstrated through simulated attack scenarios:
 |----------|-------------|
 | **[SETUP.md](SETUP.md)** | Complete installation guide |
 | **[DEMOS.md](DEMOS.md)** | Step-by-step demonstration instructions |
-| **[ARCHITECTURE.md](ARCHITECTURE.md)** | Technical architecture details |
 | **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** | Common issues & solutions |
 | **[COMMANDS.md](COMMANDS.md)** | Quick command reference |
-| **[Complete Guide (PDF)](docs/Complete_SOC_Demo.pdf)** | Full documentation package |
+
 
 ---
 
