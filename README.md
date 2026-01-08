@@ -171,6 +171,10 @@ All tools demonstrated through simulated attack scenarios:
 
 <img width="1894" height="814" alt="Screenshot 2026-01-08 170500" src="https://github.com/user-attachments/assets/3758ca5b-8f8d-4360-956d-62986c79d7a3" />
 
+### Crowsdsec (In ProdSever) - Act as a security within the production server itself, will ban suspicious IP address etc.
+
+<img width="1044" height="339" alt="Screenshot 2026-01-08 175620" src="https://github.com/user-attachments/assets/13f8f6e8-b30c-40d3-a5c5-bc75ddf1ec48" />
+
 ---
 
 ## 🚀 Quick Start
