@@ -1019,7 +1019,7 @@ chmod +x ~/check-agents-status.sh
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
