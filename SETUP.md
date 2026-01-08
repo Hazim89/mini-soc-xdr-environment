@@ -26,7 +26,7 @@
 
 ---
 
-## 🎯 Prerequisites
+## Prerequisites
 
 ### Hardware Requirements
 
@@ -55,7 +55,7 @@
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Two-VM Setup
 ```
@@ -80,7 +80,7 @@
 
 ---
 
-## 💾 VM Preparation
+## VM Preparation
 
 ### VM #1: SOC Server Specifications
 
@@ -159,7 +159,7 @@ ping -c 4 192.168.53.24  # Use your VM #1 IP
 
 ---
 
-## 🖥️ VM #1: SOC Server Setup
+## VM #1: SOC Server Setup
 
 ### System Preparation
 ```bash
@@ -462,7 +462,7 @@ Open browser: `https://[VM1-IP]:8889`
 
 ---
 
-## 🖥️ VM #2: Production Server Setup
+## VM #2: Production Server Setup
 
 ### System Preparation
 ```bash
@@ -704,7 +704,7 @@ sudo systemctl status velociraptor-client
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Prometheus Target Configuration
 
@@ -817,7 +817,7 @@ Should list VM #2 as **Active**
 
 ---
 
-## 🚀 Startup Scripts
+## Startup Scripts
 
 ### VM #1 - Start SOC Services
 
