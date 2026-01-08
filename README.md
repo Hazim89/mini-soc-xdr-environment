@@ -210,7 +210,6 @@ cat SETUP.md
 - **Tools Integrated:** 5 security tools
 - **Services Deployed:** 10 services across 2 VMs
 - **Demos Created:** 15+ demonstration scenarios
-- **Documentation:** 100+ pages
 - **Lines of Config:** 500+ lines
 
 ---
