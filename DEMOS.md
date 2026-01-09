@@ -99,7 +99,7 @@ Keep a terminal window open on VM #2 for running attack commands.
    - Click **"Proceed to 192.168.53.24 (unsafe)"**
 3. **Log in:**
    - Username: `admin`
-   - Password: `yT2qI0O7smhOyf6r1TU+2rOkj734M26` (your password)
+   - Password: `tyT2qI0O7smhOyf6r1TU+2rOkj734M26` (your password)
 4. **Click "Login"**
 
 #### Step 2: Navigate to Endpoints
@@ -128,8 +128,6 @@ Keep a terminal window open on VM #2 for running attack commands.
 ✅ **IP Address:** 192.168.53.92  
 ✅ **Last keep alive:** Recent timestamp (seconds/minutes ago)  
 
-**Say to your senior:**  
-*"This dashboard shows our production server (VM #2) is connected and being monitored in real-time. The green status indicates active communication between the agent and manager."*
 
 ---
 
@@ -206,8 +204,6 @@ ssh fakeuser5@localhost
 - Decoder information
 - Rule description
 
-**Say to your senior:**  
-*"Our SIEM immediately detected the failed login attempts and generated security alerts. In a real SOC, this would trigger an investigation workflow and possibly automated response actions."*
 
 ---
 
@@ -250,9 +246,6 @@ echo "test change for demo" | sudo tee -a /etc/passwd
 ✅ **Hash values:** MD5/SHA1 before and after  
 ✅ **Timestamp:** When change occurred  
 
-**Say to your senior:**  
-*"Wazuh continuously monitors critical system files. Any unauthorized modification triggers an alert, which is essential for detecting backdoors or malware."*
-
 ---
 
 ### Demo 1D: View Agent Details
@@ -281,8 +274,6 @@ echo "test change for demo" | sudo tee -a /etc/passwd
 - **Inventory:** Installed packages, processes, network info
 - **Stats:** Agent statistics
 
-**Say to your senior:**  
-*"This provides complete visibility into the monitored endpoint - OS details, installed software, running processes, and network connections - all from a central dashboard."*
 
 ---
 
@@ -331,9 +322,6 @@ http://192.168.53.24:9090/targets
 
 **Both should show green "UP" status!**
 
-**Say to your senior:**  
-*"Prometheus is successfully scraping metrics from both itself and our production server every 15 seconds. The green 'UP' status confirms connectivity and data collection."*
-
 ---
 
 ### Demo 2B: Query System Metrics
@@ -367,9 +355,6 @@ http://192.168.53.24:9090/targets
 - ✅ Historical trend (last hour by default)
 - ✅ Hover over graph to see exact values
 
-**Say to your senior:**  
-*"This PromQL query calculates real-time CPU usage. We can see the current percentage and historical trends."*
-
 ---
 
 #### Query 2: Memory Usage
@@ -387,9 +372,6 @@ http://192.168.53.24:9090/targets
 **What to show:**
 - ✅ Current memory usage percentage
 - ✅ Memory consumption trend
-
-**Say to your senior:**  
-*"Here we're tracking memory utilization. This helps identify memory leaks or resource exhaustion."*
 
 ---
 
@@ -457,8 +439,6 @@ stress-ng --cpu 2 --timeout 30s
 2. **Watch the graph update**
 3. **You should see CPU spike!**
 
-**Say to your senior:**  
-*"Watch as I generate CPU load on the production server - Prometheus detects the change in real-time. This is how we monitor performance during attacks or incidents."*
 
 ---
 
@@ -536,8 +516,6 @@ stress-ng --cpu 2 --timeout 30s
 
 **All graphs are live and update automatically!**
 
-**Say to your senior:**  
-*"This is what professional SOC teams use for infrastructure monitoring. All metrics from our production server are visualized in real-time. We can set alerts on any metric and create custom dashboards for different teams."*
 
 #### Step 4: Demonstrate Live Updates
 
@@ -594,8 +572,6 @@ stress-ng --cpu 2 --timeout 30s
 ✅ **Last seen:** Few seconds ago  
 ✅ **Client ID:** C.xxxxxxxxxxxxx  
 
-**Say to your senior:**  
-*"Velociraptor gives us the ability to remotely collect forensic evidence from any endpoint without disrupting operations. This is critical during incident response."*
 
 ---
 
@@ -663,8 +639,6 @@ stress-ng --cpu 2 --timeout 30s
 ✅ **Network interfaces:** IPs, MACs  
 ✅ **Boot time:** When system started  
 
-**Say to your senior:**  
-*"In seconds, we collected complete system intelligence remotely. During an incident, we can gather evidence across hundreds of machines simultaneously without alerting attackers."*
 
 ---
 
@@ -692,8 +666,6 @@ stress-ng --cpu 2 --timeout 30s
 ✅ **Command lines** - What each process is running  
 ✅ **User ownership** - Which user runs each process  
 
-**Say to your senior:**  
-*"In a real investigation, we'd look for suspicious processes, unauthorized services, or malware in the process tree."*
 
 ---
 
@@ -721,8 +693,6 @@ stress-ng --cpu 2 --timeout 30s
 ✅ **Authentication events**  
 ✅ **Failed login attempts** (from our earlier demo!)  
 
-**Say to your senior:**  
-*"We can collect any log file, registry key, or forensic artifact needed for investigation. This data is collected securely and can be analyzed offline."*
 
 ---
 
@@ -762,8 +732,6 @@ sudo systemctl status crowdsec --no-pager
 ✅ **Memory usage:** ~90MB  
 ✅ **Uptime:** How long running  
 
-**Say to your senior:**  
-*"CrowdSec is our local intrusion prevention system. It monitors logs in real-time and can automatically block attackers."*
 
 ---
 
@@ -802,8 +770,6 @@ Shows log parsing activity:
 - ✅ How many log lines processed
 - ✅ SSH logs analyzed
 
-**Say to your senior:**  
-*"CrowdSec continuously monitors our logs. The 'Local API Decisions' shows IPs that have been blocked - either from local detection or from community intelligence. We're protected by crowd-sourced threat data from thousands of users worldwide."*
 
 ---
 
@@ -843,8 +809,6 @@ sudo cscli scenarios list | head -20
 - `crowdsecurity/ssh-exploit` - SSH exploit detection
 - Many more...
 
-**Say to your senior:**  
-*"These are community-maintained detection rules. When attacks match these patterns, CrowdSec automatically bans the attacker's IP at the firewall level."*
 
 **Optional - Show collections:**
 ```bash
@@ -859,8 +823,6 @@ sudo cscli collections list
 **Purpose:** Demonstrate defense-in-depth - all 5 tools detecting the same attack
 
 **Time:** 7-10 minutes
-
-**This is your BEST demo - shows everything working together!**
 
 ---
 
@@ -921,14 +883,10 @@ done
 - Source IP
 - Decoder information
 
-**Say to your senior:**  
-*"Layer 1 - SIEM Detection: Wazuh immediately detected all failed login attempts and generated security alerts. In a real SOC, this would trigger an investigation workflow."*
 
 ---
 
 ### Step 3: Layer 2 - Prometheus Monitoring (1 minute)
-
-**Say:** *"Now let's see the performance impact..."*
 
 **Switch to Prometheus tab:**
 
@@ -951,14 +909,6 @@ node_netstat_Tcp_CurrEstab{job="production-server"}
 **Show:**
 - ✅ **Network connection changes**
 
-**Say to your senior:**  
-*"Layer 2 - Performance Monitoring: Prometheus captured the attack's impact on system resources. We can see CPU spikes and network activity changes."*
-
----
-
-### Step 4: Layer 3 - Grafana Visualization (1 minute)
-
-**Say:** *"Let's visualize this in Grafana..."*
 
 **Switch to Grafana tab (Node Exporter dashboard):**
 
@@ -968,14 +918,11 @@ node_netstat_Tcp_CurrEstab{job="production-server"}
 - ✅ **Network Traffic** - Slight increase during attack
 - ✅ **Memory** - Stable (shows system handled attack)
 
-**Say to your senior:**  
-*"Layer 3 - Visualization: Grafana gives us instant visual insight. We can see the attack's impact at a glance. Notice the system remained stable - no resource exhaustion."*
 
 ---
 
 ### Step 5: Layer 4 - Velociraptor Forensics (2 minutes)
 
-**Say:** *"Now let's collect forensic evidence..."*
 
 **Switch to Velociraptor tab:**
 
@@ -996,14 +943,11 @@ node_netstat_Tcp_CurrEstab{job="production-server"}
 - `Linux.Sys.LastUserLogin` - Login history
 - `Linux.Network.Netstat` - Network connections during attack
 
-**Say to your senior:**  
-*"Layer 4 - Incident Response: Velociraptor allows us to remotely collect forensic evidence without disrupting the production server. In a real incident, we'd collect this across all potentially compromised systems."*
 
 ---
 
 ### Step 6: Layer 5 - CrowdSec Protection (1 minute)
 
-**Say:** *"Finally, our local protection layer..."*
 
 **On VM #2 terminal:**
 ```bash
@@ -1024,18 +968,12 @@ sudo cscli metrics
 - ✅ **Show Parser Metrics** - auth.log is being monitored
 - ✅ **Show detection scenarios:** `sudo cscli scenarios list | grep ssh`
 
-**Say to your senior:**  
-*"Layer 5 - Local Prevention: CrowdSec is monitoring and has detection rules loaded. In a production environment with external attacks, it would automatically ban the attacker's IP at the firewall level, blocking them before they can cause damage."*
 
 ---
 
 ### Summary (1 minute)
 
-**Say to your senior:**  
 
-*"What we just demonstrated is a complete Security Operations Center response to a cyber attack. Let me summarize:"*
-
-**Show this mental table:**
 
 | Layer | Tool | Function | Result |
 |-------|------|----------|--------|
