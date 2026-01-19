@@ -186,12 +186,12 @@ LIMIT 30
 ```
 
 **Demo Explanation:**
-"I'm querying the production server to enumerate all running processes related to SSH, Bash shells, Python scripts, and Netcat - common tools used by attackers. In a real investigation, we'd look for:
+"Querying the production server to enumerate all running processes related to SSH, Bash shells, Python scripts, and Netcat - common tools used by attackers. In a real investigation, we'd look for:
 - Processes running from /tmp/ or /dev/shm/ (attacker staging areas)
 - Unusual parent-child relationships (web server spawning shell)
 - Processes with obfuscated names (spaces, special characters)"
 
-**What to point out in results:**
+**What to see in results:**
 - Process hierarchy (parent → child relationships)
 - Usernames running processes (root? web user? unknown?)
 - Executable paths (system binaries vs. suspicious locations)
@@ -218,7 +218,7 @@ LIMIT 30
 ```
 
 **Demo Explanation:**
-"Here I'm collecting active network connections to identify what external systems this server is communicating with. During incident response, this reveals:
+"Collecting active network connections to identify what external systems this server is communicating with. During incident response, this reveals:
 - Command & Control servers (suspicious IPs)
 - Data exfiltration (large transfers to cloud storage)
 - Lateral movement (connections to other internal servers)
@@ -244,7 +244,7 @@ LIMIT 30
 ```
 
 **Demo Explanation:**
-"I'm searching for files modified in the last hour in /tmp/ - a high-risk location because:
+"Searching for files modified in the last hour in /tmp/ - a high-risk location because:
 - World-writable (any user can write files there)
 - Common malware staging directory
 - Scripts execute from there
@@ -303,7 +303,7 @@ ORDER BY Uid
 ```
 
 **Demo Explanation:**
-"This collects all user accounts that can log in (have a shell assigned). During breach investigations, we need to identify:
+"Collects all user accounts that can log in (have a shell assigned). During breach investigations, we need to identify:
 - Legitimate users vs. attacker-created accounts
 - Accounts with root privileges (UID 0)
 - Accounts with unusual names (typosquatting legitimate accounts)
